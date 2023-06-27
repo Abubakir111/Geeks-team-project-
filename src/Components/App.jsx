@@ -1,84 +1,28 @@
 import React from "react"
 import '../main.css'
+import Header from "./Header/Header.jsx";
+import Story from "./Story/Story.jsx";
+import Reservation from "./Reservation/Reservation.jsx";
+import OurDishes from "./ourDishes/OurDishes.jsx";
+import OurMenu from "./ourMenu /OurMenu.jsx";
+import Guests from "./Guests /Guests.jsx";
+import Gallery from "./Gallery /Gallery.jsx";
+import Cookers from "./Cookers /Cookers.jsx";
+import Restaurant from "./Restaurant /Restaurant.jsx";
+import Footer from "./Footer/Footer.jsx";
 function App() {
-  const defaultStyle = {
-    width: `600px`,
-    height: `400px`,
-    margin: `50px auto`,
-    border: `2px solid black`,
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    borderRadius: `5px`,
-    fontWeight: 700,
-    background: "blueviolet",
-    color: `black`,
-    fontSize: "1.1em"
-  }
   return (
     <div className='container'>
-      <div style={defaultStyle}>
-
-        Этот блок  для  Бакира.! <br />
-        Надо удалить всё что находиться  в  этом  блоке <br />
-        и загрузить свой стилизованный  компонент <br />
-        .Стили тоже нада удалить.<br />
-        <br />
-        <br />
-        Желаю удачи в проекте  ))
-        <br />
-        <br />
-      </div>
-
-      <div style={defaultStyle}>
-
-        Этот блок  для  Мухамеда.! <br />
-        Надо удалить всё что находиться  в  этом  блоке <br />
-        и загрузить свой стилизованный  компонент <br />
-        .Стили тоже нада удалить.
-        <br />
-        <br />
-        Желаю удачи в проекте  ))
-
-
-      </div>
-
-      <div style={defaultStyle}>
-
-        Этот блок  для  Далиля.! <br />
-        Надо удалить всё что находиться  в  этом  блоке <br />
-        и загрузить свой стилизованный  компонент <br />
-        .Стили тоже нада удалить.
-        <br />
-        <br />
-        Желаю удачи в проекте  ))
-
-      </div>
-
-      <div style={defaultStyle}>
-
-        Этот блок  для  Игрья.! <br />
-        Надо удалить всё что находиться  в  этом  блоке <br />
-        и загрузить свой стилизованный  компонент <br />
-        .Стили тоже нада удалить.
-        <br />
-        <br />
-        Желаю удачи в проекте  ))
-
-      </div>
-
-      <div style={defaultStyle}>
-
-        Этот блок  для  Асема.! <br />
-        Надо удалить всё что находиться  в  этом  блоке <br />
-        и загрузить свой стилизованный  компонент <br />
-        .Стили тоже нада удалить.
-        <br />
-        <br />
-        Желаю удачи в проекте  ))
-
-      </div>
-
+      <Header/>
+      <Story/>
+      <Reservation/>
+      <OurDishes/>
+      <OurMenu/>
+      <Guests/>
+      <Gallery/>
+      <Cookers/>
+      <Restaurant/>
+      <Footer/>
     </div>
   )
 }

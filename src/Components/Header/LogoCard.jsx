@@ -1,6 +1,6 @@
 import React from "react";
 import LogoStyle from './LogoCardStyle.module.css'
-import CardImage from '../../../images/CardLogo.png'
+import CardImage from '../../asserts/CardLogo.png'
 const LogoCard = ({ title, text }) => {
     return (
         <div className={LogoStyle.contain}>

@@ -1,11 +1,11 @@
 import React from "react";
 import HeaderStyle from './HeaderStyle.module.css'
-import Headerimagelog from '../../../images/headerLog.png'
-import Headerlogo from '../../../images/LOGO.png'
-import HeaderCart from '../../../images/cart.png'
-import Headerphone from '../../../images/phone.png'
-import Button from "../Button";
-import '../../../main.css'
+import Headerimagelog from '../../asserts/headerLog.png'
+import HeaderLogo from '../../asserts/LOGO.png'
+import HeaderCart from '../../asserts/cart.png'
+import Headerphone from '../../asserts/phone.png'
+import Button from "../Ui/Button";
+import '../../main.css'
 import LogoCard from "./LogoCard";
 const Header = () => {
     return (<>
@@ -15,7 +15,7 @@ const Header = () => {
 
                 <header className={HeaderStyle.header}>
                     <div className={HeaderStyle.headerMenuContain} >
-                        <img src={Headerlogo} alt="Тут логотип" />
+                        <img src={HeaderLogo} alt="Тут логотип" />
                         <div className={HeaderStyle.headerNavBar}>
                             <div>ГЛАВНАЯ</div>
                             <div>МЕНЮ</div>
