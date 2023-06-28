@@ -5,7 +5,10 @@ const Button = ({ textButton, w, h, bg }) => {
     height: h + 'px',
     background: bg,
     fontFamily: `'Open Sans', sans-serif`,
-    color: '#fff'
+    border: 'none',
+    color: '#fff',
+    fontWeight: '400',
+    cursor: 'pointer'
   }
   return (<>
     <button style={ButtonStyle}>{textButton}</button>

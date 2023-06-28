@@ -7,7 +7,11 @@
   --bg-color: #FFFFFF;
 }
 .container{
-    max-width: 1138px;
+    max-width: 1110px;
     margin: 0 auto;  
+}
+
+a {
+    text-decoration: none;
 }
 
