@@ -13,7 +13,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('./Footer__img/bg.jpg');
+    background-image: url('../../asserts/Footer__img/bg.jpg');
     filter: brightness(0.2); /* Понизить яркость до 70% */
     background-repeat: no-repeat;
     background-size: cover;
