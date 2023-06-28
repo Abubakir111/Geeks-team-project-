@@ -1,0 +1,118 @@
+.gallery {
+    padding: 100px 0px;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.gallery__bodyTop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery__bodyBottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery__img {
+    height: 274px;
+    width: 255px;
+    object-fit: cover;
+    margin-top: 30px;
+}
+
+.img_1 {
+    width: 540px;
+    margin-top: 30px;
+}
+
+.img_6 {
+    width: 540px;
+    margin-top: 30px;
+}
+.mobile__container {
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    .img_1 {
+        width: 100%;
+    }
+    .img_6 {
+        width: 100%;
+    }
+    .gallery__img {
+        width: 100%;
+    }
+    .mobile__container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    .img_1 {
+        width: 100%;
+    }
+    .img_6 {
+        width: 100%;
+    }
+    .gallery__img {
+        width: 100%;
+    }
+    .gallery__bodyTop {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .gallery__bodyBottom {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .mobile__container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1050px) {
+    .img_3 {
+        flex: 1;
+    }
+    .img_6 {
+        flex: 1;
+    }
+    .gallery__img {
+        width: 45%;
+    }
+    .gallery__bodyTop {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .gallery__bodyBottom {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .mobile__container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}

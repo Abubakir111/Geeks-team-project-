@@ -4,7 +4,7 @@ const Title = ({ title, item }) => {
 
     return (
         <>
-            <h2 className={TitleStyle.title}>{title} </h2>
+            <h2 className={TitleStyle.title}>{title}</h2>
             <h2 className={TitleStyle.item}>{item}</h2>
         </>
     )
