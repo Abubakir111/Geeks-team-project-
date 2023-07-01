@@ -1,19 +1,20 @@
 import React from "react";
 import LogoStyle from './LogoCardStyle.module.css'
 import CardImage from '../../asserts/CardLogo.png'
-const LogoCard = ({ title, text }) => {
+const LogoCard = ({ title, titles, text }) => {
     return (
         <div className={LogoStyle.contain}>
             <img src={CardImage} alt={'картинка'} className={LogoStyle.cardImg} />
             <div className={LogoStyle.title}>
                 {title}
                 <span className={LogoStyle.titleSpan}>
-                    {text}
+                    {titles}
                 </span>
             </div>
             <div className={LogoStyle.item}>
-                В нашем заведении царит магическая атмосфера
-                наполненная вкусными ароматами
+                {
+                    text
+                }
             </div>
         </div>)
 }

@@ -1,7 +1,6 @@
 .headerWrapper{
 width: 100%;
-height: 1021px;
-border: 2px solid black;
+height: 1021px; 
 position: relative;
 }
 .headerImage{
@@ -28,14 +27,18 @@ width: 100%;
 height: 64px;
 display: flex;
 justify-content: space-between;
-color: #fff;
+color: #FFF;
+font-size: 14px;
+font-family: Open Sans;
+font-style: normal;
+font-weight: 700;
+margin-bottom: 201px;
 }
 .headerNavBar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    grid-gap:40px;
-
+    grid-gap:25px;
 }
 .cortLince{
     width: 80px;
@@ -51,40 +54,65 @@ color: #fff;
 .TextContain{
     width: max-content;
     text-align: center;
-    color: #D67E35
+    color: #D67E35;
+    margin-bottom: 82px;
+    display: flex;
+    flex-direction: column;
 }
-.c{
+.TextContainp1{
     font-family: 'Tinos', serif;
     font-weight: 400;
+    font-size: 50px;
 }
 .TextContainp2{
     font-family: 'Tinos', serif;
     font-weight: 400;
-    font-size: 2.2em;
+    font-size: 80px;
+}
+.TextContainp3Wraper{
+    width: 100%;
+    height: 100%;
+    margin: 21px auto;
 }
 .TextContainp3{
-     font-family: 'Tinos', serif;
+    width: max-content;
+    height: max-content;
+     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 0.7em;
+    font-size: 18px;
     color: #fff;
     position: relative;
+    margin: auto;
 }
 .TextContainp3::before{
     content : '';
-    top: 5px;
-    right: 0px;
-    width: 50px;
-    height: 1px;
+    top: 12px;
+    right: 181px;
+    width: 61px;
+    height: 2px;
     background: #fff;
     position: absolute;
-    
+ 
 }
 .TextContainp3::after{
     content : '';
-    top: 5px;
-    left: 0px;
-    width: 50px;
-    height: 1px;
+    top: 12px;
+    right: -74px;
+    width: 61px;
+    height: 2px;
     background: #fff;
     position: absolute;
+}
+.button{
+    margin: auto;
+}
+.CardContainer{
+    width: 100%;
+    height: 100%;
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    grid-template-rows: 100%;
+   grid-column-gap: 30px;
 }
