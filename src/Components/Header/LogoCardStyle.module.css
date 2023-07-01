@@ -2,14 +2,28 @@
 width: 349px;
 height: 328px;
 background: #fff;
+display: grid;
+ grid-template-columns: 100%;
+ grid-template-rows: repeat(3,max-content);
+text-align: center;
+font-family: Tinos;
+font-style: normal;
+font-size: 26px;
+font-weight: 400;
+/* align-items: center; */
 
 }
-/* .cardImg{
-    
-}
+.cardImg{
+   margin: auto;  
+} 
 .title{
-
+color: #2C2C2C;
+margin-bottom: 20px;
 }
 .titleSpan{
-
-} */
+color: #BC9060;
+} 
+.item{
+ color: #656363; 
+ padding: 0px 40px; 
+}

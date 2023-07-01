@@ -36,14 +36,32 @@ const Header = () => {
                     <div>
                         <div className={HeaderStyle.TextContain}>
                             <p className={HeaderStyle.TextContainp1}>Добро пожаловать в</p>
-                            <p className={HeaderStyle.TextContainp2}>Наш ресторан</p>
-                            <p className={HeaderStyle.TextContainp3}>ДОМ ЛУЧШЕЙ ЕДЫ</p>
-                            <Button textButton={"VIEW MENU"} w={137} h={47} bg={"#FF7400"} />
+                            <p className={HeaderStyle.TextContainp2}>ALEMOND</p>
+                            <div className={HeaderStyle.TextContainp3Wraper}>
+                                <p className={HeaderStyle.TextContainp3}>ДОМ ЛУЧШЕЙ ЕДЫ</p>
+                            </div>
+                            <div className={HeaderStyle.button}>
+                                <Button textButton={"VIEW MENU"} w={137} h={47} bg={"#FF7400"} />
+                            </div>
 
                         </div>
                     </div>
-                    <div >
-                        <LogoCard title={"Магическая "} text={"Атмосфера"} />
+                    Лучшее качество Еды
+                    <div className={HeaderStyle.CardContainer} >
+                        <LogoCard
+                            title={"Магическая "}
+                            titles={"Атмосфера"}
+                            text={`В нашем заведении царит магическая атмосфера наполненная вкусными ароматами`} />
+
+                        <LogoCard
+                            title={"Лучшее качество "}
+                            titles={"Еды"}
+                            text={`Качество нашей Еды - отменное!`} />
+
+                        <LogoCard
+                            title={"Недорогая "}
+                            titles={"Еда"}
+                            text={`Стоимость нашей Еды зависит только от ее количества. Качество всегда на высоте!`} />
                     </div>
                 </header>
 
