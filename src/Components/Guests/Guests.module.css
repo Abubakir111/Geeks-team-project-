@@ -21,6 +21,7 @@
     object-fit: cover;
 }
 
+
 .text {
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
@@ -45,14 +46,17 @@
     width: 5px;
     background-color: #C4C4C4;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .pagination__itemActive {
-    height: 7px;
-    width: 7px;
+    display: block;
+    height: 8px;
+    width: 8px;
     border-radius: 50%;
     border: 1px solid #FF7400;
     background-color: #E5E5E5;
+    transition: border .3s ease; 
 }
 
 .pagination {
