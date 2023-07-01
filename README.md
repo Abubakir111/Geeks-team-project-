@@ -17,8 +17,8 @@
 
 ‼️‼️‼️‼️‼️
 
+ ``Ссылка на макт : https://www.figma.com/file/dVBa7wx6E0y2wiSODQdhut/Untitled?node-id=0%3A1&mode=dev``.
 ```Проект 1```
- ``Ссылка на макт : https://www.figma.com/file/dVBa7wx6E0y2wiSODQdhut/Untitled?node-id=0%3A1&mode=dev``
 Tasks:
  1. Разбить на компоненты и назвать их +
  2. Разделить задачи +
