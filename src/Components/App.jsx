@@ -11,13 +11,12 @@ import Cookers from "./Cookers/Cookers";
 import Restaurant from "./Restaurant/Restaurant";
 import Footer from "./Footer/Footer";
 import ShoppingCart from "./ShoppingCart/ShoppingCart";
-
+import Overlay from "./ShoppingCart/Overlay/Overlay";
 
 function App() {
     return (
         <>
-            <ShoppingCart/>
-
+            <Header/>п
             <Story/>
             <Reservation/>
             <OurDishes/>
