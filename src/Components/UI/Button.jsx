@@ -1,5 +1,5 @@
 import React from "react";
-const Button = ({ textButton, w, h, bg }) => {
+const Button = ({ textButton, w, h, bg, onClick }) => {
   let ButtonStyle = {
     width: w + 'px',
     height: h + 'px',
@@ -11,7 +11,7 @@ const Button = ({ textButton, w, h, bg }) => {
     cursor: 'pointer'
   }
   return (<>
-    <button style={ButtonStyle}>{textButton}</button>
+    <button onClick={onClick} style={ButtonStyle}>{textButton}</button>
   </>)
 }
 export default Button 

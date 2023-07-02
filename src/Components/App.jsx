@@ -10,11 +10,14 @@ import Gallery from "./Gallery/Gallery";
 import Cookers from "./Cookers/Cookers";
 import Restaurant from "./Restaurant/Restaurant";
 import Footer from "./Footer/Footer";
+import ShoppingCart from "./ShoppingCart/ShoppingCart";
+
 
 function App() {
     return (
         <>
-            <Header/>
+            <ShoppingCart/>
+
             <Story/>
             <Reservation/>
             <OurDishes/>
