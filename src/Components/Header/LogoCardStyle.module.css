@@ -28,6 +28,23 @@ color: #BC9060;
  color: #656363; 
  padding: 0px 40px; 
 }
+@media screen and  (max-width:319px) and  (min-width:0px) {
+.contain{
+width: 349px;
+height: 328px;
+background: #fff;
+display: grid;
+grid-template-columns: 100%;
+grid-template-rows: repeat(3,max-content);
+text-align: center;
+font-family: Tinos;
+font-style: normal;
+font-size: 18px;
+font-weight: 400;
+box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.10);
+
+}
+}
 @media screen and  (max-width:810px) and  (min-width:360px) {
 .contain{
       width: 100%
