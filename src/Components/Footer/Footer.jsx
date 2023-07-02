@@ -17,20 +17,20 @@ const Footer = () => {
                 <div className={styles.footer__wrapper}>
                     <div className={styles.footer__left}>
                         <div className={styles.footer__follow}>
-                            <img className={styles.logo} src={logo} alt="logo"/>
+                            <img className={styles.logo} src={logo} alt="logo" />
                             <h2>Подпишитесь на нас!</h2>
                             <div className={styles.footer__follow_icon}>
                                 <div className={styles.footer__follow_icon_item}>
-                                    <img src={icon1} alt="icon1"/>
+                                    <img src={icon1} alt="icon1" />
                                 </div>
                                 <div className={styles.footer__follow_icon_item}>
-                                    <img src={icon2} alt="icon2"/>
+                                    <img src={icon2} alt="icon2" />
                                 </div>
                                 <div className={styles.footer__follow_icon_item}>
-                                    <img src={icon3} alt="icon3"/>
+                                    <img src={icon3} alt="icon3" />
                                 </div>
                                 <div className={styles.footer__follow_icon_item}>
-                                    <img src={icon4} alt="icon4"/>
+                                    <img src={icon4} alt="icon4" />
                                 </div>
                             </div>
                             <div className={styles.btn}>
@@ -65,15 +65,15 @@ const Footer = () => {
                                 <a href="#">г. Санкт-Петербург, д. 85</a>
                             </div>
                             <div className={styles.footer__links_item}>
-                                <img src={phoneIcon} alt="arrow"/>
+                                <img src={phoneIcon} alt="arrow" />
                                 <a href="#">+999-888-76-54</a>
                             </div>
                             <div className={styles.footer__links_item}>
-                                <img src={mailIcon} alt="arrow"/>
+                                <img src={mailIcon} alt="arrow" />
                                 <a href="#">info@gmail.com</a>
                             </div>
                             <div className={styles.footer__links_item}>
-                                <img src={wwwIcon} alt="arrow"/>
+                                <img src={wwwIcon} alt="arrow" />
                                 <a href="#">www.yourdomain.com</a>
                             </div>
                         </div>
