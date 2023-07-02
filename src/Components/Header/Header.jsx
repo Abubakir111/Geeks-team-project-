@@ -41,19 +41,16 @@ const Header = () => {
                             <Button textButton={"Доставка"} w={157} h={47} bg={"#FF7400"} />
                         </div>
                     </div>
-                    <div>
-                        <div className={HeaderStyle.TextContain}>
-                            <p className={HeaderStyle.TextContainp1}>Добро пожаловать в</p>
-                            <p className={HeaderStyle.TextContainp2}>ALEMOND</p>
-                            <div className={HeaderStyle.TextContainp3Wraper}>
-                                <p className={HeaderStyle.TextContainp3}>ДОМ ЛУЧШЕЙ ЕДЫ</p>
-                            </div>
-                            <div className={HeaderStyle.button}>
-                                <Button className={HeaderStyle.buttonDesktop} textButton={"Меню"} w={137} h={47} bg={"#FF7400"} />
-
-                            </div>
-
+                    <div className={HeaderStyle.TextContain}>
+                        <p className={HeaderStyle.TextContainp1}>Добро пожаловать в</p>
+                        <p className={HeaderStyle.TextContainp2}>ALEMOND</p>
+                        <div className={HeaderStyle.TextContainp3Wraper}>
+                            <p className={HeaderStyle.TextContainp3}>ДОМ ЛУЧШЕЙ ЕДЫ</p>
                         </div>
+                        <div className={HeaderStyle.button}>
+                            <Button className={HeaderStyle.buttonDesktop} textButton={"Меню"} w={137} h={47} bg={"#FF7400"} />
+                        </div>
+
                     </div>
                     <div className={HeaderStyle.CardContainer} >
                         <LogoCard
