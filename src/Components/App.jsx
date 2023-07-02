@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from 'react';
 import '../main.css'
 import Header from "./Header/Header.jsx";
 import Story from "./Story/Story.jsx";
@@ -10,22 +10,34 @@ import Gallery from "./Gallery/Gallery";
 import Cookers from "./Cookers/Cookers";
 import Restaurant from "./Restaurant/Restaurant";
 import Footer from "./Footer/Footer";
+import ShoppingCart from "./ShoppingCart/ShoppingCart";
+
 
 function App() {
+
+    const [modal, setModal] = useState(false);
+    const showModal = () => {
+        setModal(true);
+    };
+    const closeModal = () => {
+        setModal(false);
+    };
+
     return (
         <>
-            <Header/>
-            <Story/>
-            <Reservation/>
-            <OurDishes/>
-            <OurMenu/>
-            <Guests/>
-            <Gallery/>
-            <Cookers/>
-            <Restaurant/>
-            <Footer/>
+            {modal && <ShoppingCart close={closeModal} />}
+            <Header onClick={showModal} />
+            <Story />
+            <Reservation />
+            <OurDishes />
+            <OurMenu />
+            <Guests />
+            <Gallery />
+            <Cookers />
+            <Restaurant />
+            <Footer />
         </>
-    )
+    );
 }
 
-export default App
+export default App;

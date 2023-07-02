@@ -6,10 +6,11 @@ import HeaderCart from '../../asserts/Heder_img/cart.png'
 import Headerphone from '../../asserts/Heder_img/phone.png'
 import hederMenuGroop from '../../asserts/Heder_img/mediaHederGroop.png'
 import HeroMedioImg from '../../asserts/Heder_img/heroImage.png'
-import Button from "../Ui/Button";
+import Button from "../UI/Button";
 import '../../main.css'
 import LogoCard from "./LogoCard";
-const Header = () => {
+
+const Header = ({onClick}) => {
     return (<>
         <div className={HeaderStyle.headerWrapper}>
             <img className={HeaderStyle.headerImage} src={Headerimagelog} alt="Кртинка" />
@@ -38,22 +39,19 @@ const Header = () => {
                                 <p>Свяжитесь с нами для</p>
                                 <p>бронирования</p>
                             </div>
-                            <Button textButton={"ЗАКАЗ СТОЛИКА"} w={157} h={47} bg={"#FF7400"} />
+                            <Button onClick={onClick} textButton={"Доставка"} w={157} h={47} bg={"#FF7400"} />
                         </div>
                     </div>
-                    <div>
-                        <div className={HeaderStyle.TextContain}>
-                            <p className={HeaderStyle.TextContainp1}>Добро пожаловать в</p>
-                            <p className={HeaderStyle.TextContainp2}>ALEMOND</p>
-                            <div className={HeaderStyle.TextContainp3Wraper}>
-                                <p className={HeaderStyle.TextContainp3}>ДОМ ЛУЧШЕЙ ЕДЫ</p>
-                            </div>
-                            <div className={HeaderStyle.button}>
-                                <Button className={HeaderStyle.buttonDesktop} textButton={"Меню"} w={137} h={47} bg={"#FF7400"} />
-
-                            </div>
-
+                    <div className={HeaderStyle.TextContain}>
+                        <p className={HeaderStyle.TextContainp1}>Добро пожаловать в</p>
+                        <p className={HeaderStyle.TextContainp2}>ALEMOND</p>
+                        <div className={HeaderStyle.TextContainp3Wraper}>
+                            <p className={HeaderStyle.TextContainp3}>ДОМ ЛУЧШЕЙ ЕДЫ</p>
                         </div>
+                        <div className={HeaderStyle.button}>
+                            <Button className={HeaderStyle.buttonDesktop} textButton={"Меню"} w={137} h={47} bg={"#FF7400"} />
+                        </div>
+
                     </div>
                     <div className={HeaderStyle.CardContainer} >
                         <LogoCard
