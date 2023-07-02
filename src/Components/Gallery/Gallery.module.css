@@ -88,7 +88,7 @@
     }
 }
 
-@media screen and (min-width: 800px) and (max-width: 1050px) {
+@media screen and (min-width: 800px) and (max-width: 1066px) {
     .img_3 {
         flex: 1;
     }
