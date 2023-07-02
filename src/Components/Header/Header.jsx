@@ -9,7 +9,8 @@ import HeroMedioImg from '../../asserts/Heder_img/heroImage.png'
 import Button from "../UI/Button";
 import '../../main.css'
 import LogoCard from "./LogoCard";
-const Header = () => {
+
+const Header = ({onClick}) => {
     return (<>
         <div className={HeaderStyle.headerWrapper}>
             <img className={HeaderStyle.headerImage} src={Headerimagelog} alt="Кртинка" />
@@ -38,7 +39,7 @@ const Header = () => {
                                 <p>Свяжитесь с нами для</p>
                                 <p>бронирования</p>
                             </div>
-                            <Button textButton={"Доставка"} w={157} h={47} bg={"#FF7400"} />
+                            <Button onClick={onClick} textButton={"Доставка"} w={157} h={47} bg={"#FF7400"} />
                         </div>
                     </div>
                     <div>

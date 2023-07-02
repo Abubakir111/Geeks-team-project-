@@ -1,37 +1,33 @@
-import React from "react"
-import '../main.css'
-import Header from "./Header/Header.jsx";
-import Story from "./Story/Story.jsx";
-import Reservation from "./Reservation/Reservation";
-import OurDishes from "./ourDishes/OurDishes";
-import OurMenu from "./ourMenu/OurMenu";
-import Guests from "./Guests/Guests.jsx";
-import Gallery from "./Gallery/Gallery";
-import Cookers from "./Cookers/Cookers";
-import Restaurant from "./Restaurant/Restaurant";
-import Footer from "./Footer/Footer";
-<<<<<<< HEAD
-import ShoppingCart from "./ShoppingCart/ShoppingCart";
-import Overlay from "./ShoppingCart/Overlay/Overlay";
+import React, { useState } from 'react';
+import '../main.css';
+import Header from './Header/Header.jsx';
+import Story from './Story/Story.jsx';
+import Reservation from './Reservation/Reservation';
+import OurDishes from './ourDishes/OurDishes';
+import OurMenu from './ourMenu/OurMenu';
+import Guests from './Guests/Guests.jsx';
+import Gallery from './Gallery/Gallery';
+import Cookers from './Cookers/Cookers';
+import Restaurant from './Restaurant/Restaurant';
+import Footer from './Footer/Footer';
+
+import ShoppingCart from './ShoppingCart/ShoppingCart';
+import Overlay from './ShoppingCart/Overlay/Overlay';
 
 function App() {
+
+    const [modal, setModal] = useState(false);
+    const showModal = () => {
+        setModal(true);
+    };
+    const closeModal = () => {
+        setModal(false);
+    };
+
     return (
         <>
-            <Header/>п
-            <Story/>
-            <Reservation/>
-            <OurDishes/>
-            <OurMenu/>
-            <Guests/>
-            <Gallery/>
-            <Cookers/>
-            <Restaurant/>
-            <Footer/>
-=======
-function App() {
-    return (
-        <>
-            <Header />
+            {modal && <ShoppingCart close={closeModal} />}
+            <Header onClick={showModal} />
             <Story />
             <Reservation />
             <OurDishes />
@@ -41,9 +37,8 @@ function App() {
             <Cookers />
             <Restaurant />
             <Footer />
->>>>>>> edc745a5629d45f834ccc015610a587951a924bb
         </>
-    )
+    );
 }
 
-export default App
+export default App;

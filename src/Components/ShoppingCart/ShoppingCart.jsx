@@ -7,7 +7,7 @@ import cross from '../../asserts/ShoppingCart-img/cross-small.svg';
 import Button from '../UI/Button.jsx';
 import logo from '../../asserts/LOGO.png';
 
-const ShoppingCart = () => {
+const ShoppingCart = ({ close }) => {
     const [data, setData] = useState([]);
     const [filterCategory, setFilterCategory] = useState([]);
     const [searchValue, setSearchValue] = useState('');
@@ -45,6 +45,7 @@ const ShoppingCart = () => {
         setFilterCategory(searchArray);
     };
 
+
     const handleChange = (event) => {
         setSearchValue(event.target.value);
     };
@@ -78,7 +79,7 @@ const ShoppingCart = () => {
     return (
         <div>
             <div className={styles.cart}>
-                <img className={styles.cart__exit} src={cross} alt='cross' />
+                <img onClick={close} className={styles.cart__exit} src={cross} alt='cross' />
                 <img src={logo} alt='logo' />
                 <h2 className={styles.cart__title}>Доставка Продуктов</h2>
                 <input
@@ -108,14 +109,15 @@ const ShoppingCart = () => {
                 </div>
                 <div className={styles.cart__list}>
                     <ul className={styles.cart__ul}>
-                        {filterCategory.map(item => (
-                            <li key={item.name} className={styles.cart__li}>
-                                <span>{item.name}</span> <span className={styles.rightBLock}>{item.price} сом <span><img
-                                onClick={() => {
-                                    addProduct(item);
-                                }} className={styles.plus} src={plus} alt='plus' /></span></span>
-                            </li>
-                        ))}
+                        {filterCategory.length === 0 ?
+                            <h3 style={{ marginBottom: '20px' }}>Ничего не найдено!</h3> : filterCategory.map(item => (
+                                <li key={item.name} className={styles.cart__li}>
+                                    <span>{item.name}</span> <span className={styles.rightBLock}>{item.price} сом <span><img
+                                    onClick={() => {
+                                        addProduct(item);
+                                    }} className={styles.plus} src={plus} alt='plus' /></span></span>
+                                </li>
+                            ))}
                     </ul>
                 </div>
                 <div className={styles.cart__selected}>
@@ -139,12 +141,13 @@ const ShoppingCart = () => {
                             <Button textButton={'Заказать Доставку'} w={157} h={47} bg={'#FF7400'} />
                         </div>
                         <div className={styles.totalPriceWrapper}>
-                            <span style={{ fontWeight: '600'}} className={styles.totalPriceItem}>Итого: {price} сом</span>
+                            <span style={{ fontWeight: '600' }}
+                                  className={styles.totalPriceItem}>Итого: {price} сом</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <Overlay />
+            <Overlay exit={close} />
         </div>
     );
 };
