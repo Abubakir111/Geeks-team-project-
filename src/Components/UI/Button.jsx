@@ -1,5 +1,6 @@
 import React from "react";
-const Button = ({ textButton, w, h, bg }) => {
+import ButtonStyles from './ButtonStyle.module.css'
+const Button = ({ textButton, w, h, bg, }) => {
   let ButtonStyle = {
     width: w + 'px',
     height: h + 'px',
@@ -7,11 +8,10 @@ const Button = ({ textButton, w, h, bg }) => {
     fontFamily: `'Open Sans', sans-serif`,
     border: 'none',
     color: '#fff',
-    fontWeight: '400',
     cursor: 'pointer'
   }
   return (<>
-    <button style={ButtonStyle}>{textButton}</button>
+    <button className={ButtonStyles.button} style={ButtonStyle}>{textButton}</button>
   </>)
 }
 export default Button 

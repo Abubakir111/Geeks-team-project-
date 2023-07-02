@@ -3,14 +3,15 @@ width: 349px;
 height: 328px;
 background: #fff;
 display: grid;
- grid-template-columns: 100%;
- grid-template-rows: repeat(3,max-content);
+grid-template-columns: 100%;
+grid-template-rows: repeat(3,max-content);
 text-align: center;
 font-family: Tinos;
 font-style: normal;
 font-size: 26px;
 font-weight: 400;
-/* align-items: center; */
+box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.10);
+
 
 }
 .cardImg{
@@ -22,8 +23,48 @@ margin-bottom: 20px;
 }
 .titleSpan{
 color: #BC9060;
+
 } 
+
 .item{
  color: #656363; 
  padding: 0px 40px; 
+}
+
+
+
+@media screen and  (max-width:360px) and  (min-width:320px) {
+   .contain{
+      width: 276px;
+      height: 276px;
+      background: #fff;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(3,max-content);
+      text-align: center;
+      font-family: Tinos;
+      font-style: normal;
+      font-size: 26px;
+      font-weight: 400;
+      box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.10);
+
+
+}
+.cardImg{
+   margin: auto;  
+} 
+.title{
+color: #2C2C2C;
+margin-bottom: 20px;
+}
+.titleSpan{
+color: #BC9060;
+
+} 
+
+.item{
+   font-size: 22px;
+ color: #656363; 
+ padding: 0px 10px; 
+}
 }

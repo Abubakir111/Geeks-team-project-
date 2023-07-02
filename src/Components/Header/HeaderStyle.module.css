@@ -3,6 +3,10 @@ width: 100%;
 height: 1021px; 
 position: relative;
 }
+.container{
+    max-width: 1110px;
+    margin: 0 auto;  
+}
 .headerImage{
     top: 0px;
     left: 0px;
@@ -13,6 +17,9 @@ position: relative;
     background-size: cover;
     position: absolute;
     z-index: -1;
+}
+.headerImageMedia{
+    display: none;
 }
 .header{
  width: 100%;
@@ -33,6 +40,12 @@ font-family: Open Sans;
 font-style: normal;
 font-weight: 700;
 margin-bottom: 201px;
+}
+.headerLogoContainer{
+    display:  none;
+}
+.hederMenuGroop{
+    display: none;
 }
 .headerNavBar{
     display: flex;
@@ -106,6 +119,15 @@ margin-bottom: 201px;
 .button{
     margin: auto;
 }
+.buttonDesktop{
+    display: block;
+}
+.buttonMedia{
+    display: none;
+}
+.btnHeder{
+    display: block;
+}
 .CardContainer{
     width: 100%;
     height: 100%;
@@ -116,3 +138,195 @@ margin-bottom: 201px;
     grid-template-rows: 100%;
    grid-column-gap: 30px;
 }
+
+
+
+
+
+@media screen and  (max-width:360px) and  (min-width:320px) {
+     .headerWrapper{
+width: 100%;
+height: max-content; 
+position: relative;
+}
+.container{
+    max-width: 276px;
+    margin: 0 auto;  
+}
+.headerImage{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+}
+.headerImageMedia{
+     top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    display: block;
+}
+.header{
+ width: 100%;
+ height: max-content;
+ ;display: grid;
+ grid-template-columns: 100%;
+ grid-template-rows: repeat(3,max-content);
+ padding-top: 20px;
+}
+.headerMenuContain{
+width: 100%;
+height: 64px;
+display: flex;
+justify-content: space-between;
+color: #FFF;
+font-size: 14px;
+font-family: Open Sans;
+font-style: normal;
+font-weight: 700;
+margin-bottom: 252px;
+}
+.headerNavBar{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap:25px;
+}
+.HeaderLogoImage{display: none;}
+.headerLogoContainer{ display: none;}
+.items{
+    display: none;
+}
+.headerLogoContainer{
+    width: max-content;
+    height: max-content;
+    display: block;
+    position: relative;
+}
+.headerLogoContainer{
+    display:  block;
+}
+.Rectangele1{
+    width: 21.773px;
+    height: 21.773px;
+    transform: rotate(-45deg);
+    border: 3px solid #FF7400;
+    background: rgba(255, 116, 0, 0.00);
+    display: block;
+}
+.Rectangele2{
+    top: 0px;
+    left: 14px;
+    width: 21.773px;
+    height: 21.773px;
+    transform: rotate(-45deg);
+    border: 3px solid #FF7400;
+    background: rgba(255, 116, 0, 0.00);
+    display: block;
+    position: absolute;
+}
+.hederMenuGroop{
+    width: 30.875px;
+    height: 17.75px;
+    display: block;
+}
+.cortLince{
+    width: 80px;
+    height: 55px;
+    border-right: 1px solid rgb(207, 191, 191);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerphone{
+ padding-right: 10px;
+}
+.TextContain{
+    width: max-content;
+    text-align: center;
+    color: #D67E35;
+    margin-bottom: 82px;
+    display: flex;
+    flex-direction: column;
+}
+.TextContainp1{
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+.TextContainp2{
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+.TextContainp3Wraper{
+    width: 100%;
+    height: 100%;
+    margin: 21px  auto 45px auto;
+}
+.TextContainp3{
+    width: max-content;
+    height: max-content;
+     font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    margin: auto;
+}
+.TextContainp3::before{
+    content : '';
+    top: 12px;
+    right: 181px;
+    width: 61px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    display: none;
+
+}
+.TextContainp3::after{
+    content : '';
+    top: 12px;
+    right: -74px;
+    width: 61px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+      display: none;
+}
+.button{
+    margin: auto;
+}
+.buttonDesktop{
+    display: none;
+}
+.buttonMedia{
+    display: block;
+}
+.btnHeder{
+    display: none;
+}
+.btnMedia{
+       display: block;
+}
+.CardContainer{
+    width: 100%;
+    height: 100%;
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+   gap: 30px;
+}
+} 
