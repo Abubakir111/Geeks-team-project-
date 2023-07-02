@@ -1,0 +1,101 @@
+.reservation {
+  margin-top: 120px;
+  position: relative;
+  z-index: 1;
+}
+.reservationInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 105px 80px;
+}
+@media (max-width: 970px) {
+  .reservationInner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.reservation:before {
+  z-index: -1;
+  background-image: url("../../asserts/food.png");
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: brightness(0.2);
+          filter: brightness(0.2);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.reservationText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.reservationTitle {
+  color: #D67E34;
+  font-size: 52px;
+  font-family: Tinos;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 601px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+@media (max-width: 640px) {
+  .reservationTitle {
+    width: 400px;
+    text-align: center;
+  }
+}
+@media (max-width: 490px) {
+  .reservationTitle {
+    font-size: 30px;
+    width: 200px;
+  }
+}
+.reservationDesc {
+  color: #FFF;
+  font-size: 24px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media (max-width: 970px) {
+  .reservationDesc {
+    text-align: center;
+  }
+}
+@media (max-width: 590px) {
+  .reservationDesc {
+    width: 290px;
+  }
+}
+@media (max-width: 970px) {
+  .reservationButtonBlock {
+    padding-top: 41px;
+  }
+}
