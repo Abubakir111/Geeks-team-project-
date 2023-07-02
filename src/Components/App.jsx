@@ -10,20 +10,19 @@ import Gallery from "./Gallery/Gallery";
 import Cookers from "./Cookers/Cookers";
 import Restaurant from "./Restaurant/Restaurant";
 import Footer from "./Footer/Footer";
-
 function App() {
     return (
         <>
-            <Header/>
-            <Story/>
-            <Reservation/>
-            <OurDishes/>
-            <OurMenu/>
-            <Guests/>
-            <Gallery/>
-            <Cookers/>
-            <Restaurant/>
-            <Footer/>
+            <Header />
+            <Story />
+            <Reservation />
+            <OurDishes />
+            <OurMenu />
+            <Guests />
+            <Gallery />
+            <Cookers />
+            <Restaurant />
+            <Footer />
         </>
     )
 }

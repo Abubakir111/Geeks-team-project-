@@ -6,7 +6,7 @@ import HeaderCart from '../../asserts/Heder_img/cart.png'
 import Headerphone from '../../asserts/Heder_img/phone.png'
 import hederMenuGroop from '../../asserts/Heder_img/mediaHederGroop.png'
 import HeroMedioImg from '../../asserts/Heder_img/heroImage.png'
-import Button from "../Ui/Button";
+import Button from "../UI/Button";
 import '../../main.css'
 import LogoCard from "./LogoCard";
 const Header = () => {
@@ -38,7 +38,7 @@ const Header = () => {
                                 <p>Свяжитесь с нами для</p>
                                 <p>бронирования</p>
                             </div>
-                            <Button textButton={"ЗАКАЗ СТОЛИКА"} w={157} h={47} bg={"#FF7400"} />
+                            <Button textButton={"Доставка"} w={157} h={47} bg={"#FF7400"} />
                         </div>
                     </div>
                     <div>
