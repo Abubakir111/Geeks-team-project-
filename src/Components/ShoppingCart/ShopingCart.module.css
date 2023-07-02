@@ -112,6 +112,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .cross {
@@ -128,7 +129,53 @@
     font-size: 20px;
 }
 
-@media screen and (min-width: 0px) and (max-width: 570px) {
+@media screen and (min-width: 0px) and (max-width: 335px) {
+    .name {
+        font-size: 12px;
+    }
+
+    .rightBLock {
+        font-size: 12px;
+    }
+
+    .cart__category {
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+
+    .cart__categoryWrap {
+        font-size: 12px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .cart {
+        width: 100%;
+        min-height: 100vh;
+        min-width: 0;
+        padding: 20px 10px 20px 10px;
+        top: 0;
+        /* Положение по вертикали - середина родительского элемента */
+        left: 0;
+        /* Положение по горизонтали - середина родительского элемента */
+        transform: none;
+    }
+
+    .selectedWrap span {
+        font-size: 12px;
+    }
+
+    .totalPriceWrap {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 570px) {
     body {
         overflow-x: hidden;
     }
@@ -152,6 +199,8 @@
         justify-content: space-between;
         height: 100px;
     }
+
+
 }
 
 @media screen and (min-width: 570px) and (max-width: 1000px) {

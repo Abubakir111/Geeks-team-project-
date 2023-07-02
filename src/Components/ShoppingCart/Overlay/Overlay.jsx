@@ -1,8 +1,8 @@
 import styles from './Overlay.module.css'
 
-const Overlay = () => {
+const Overlay = ( {exit} ) => {
   return (
-    <div className={styles.overlay}></div>
+    <div onClick={exit} className={styles.overlay}></div>
   )
 }
 
