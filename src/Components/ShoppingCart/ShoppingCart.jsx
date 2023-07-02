@@ -81,7 +81,7 @@ const ShoppingCart = ({ close }) => {
             <div className={styles.cart}>
                 <img onClick={close} className={styles.cart__exit} src={cross} alt='cross' />
                 <img src={logo} alt='logo' />
-                <h2 className={styles.cart__title}>Доставка Продуктов</h2>
+                <h2 className={styles.cart__title}>Доставка</h2>
                 <input
                     className={styles.cart__input}
                     placeholder='Найти еду!'
@@ -112,7 +112,8 @@ const ShoppingCart = ({ close }) => {
                         {filterCategory.length === 0 ?
                             <h3 style={{ marginBottom: '20px' }}>Ничего не найдено!</h3> : filterCategory.map(item => (
                                 <li key={item.name} className={styles.cart__li}>
-                                    <span>{item.name}</span> <span className={styles.rightBLock}>{item.price} сом <span><img
+                                    <span className={styles.name}>{item.name}</span> <span
+                                    className={styles.rightBLock}>{item.price} сом <span><img
                                     onClick={() => {
                                         addProduct(item);
                                     }} className={styles.plus} src={plus} alt='plus' /></span></span>

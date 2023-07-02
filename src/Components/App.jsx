@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
-import '../main.css';
-import Header from './Header/Header.jsx';
-import Story from './Story/Story.jsx';
-import Reservation from './Reservation/Reservation';
-import OurDishes from './ourDishes/OurDishes';
-import OurMenu from './ourMenu/OurMenu';
-import Guests from './Guests/Guests.jsx';
-import Gallery from './Gallery/Gallery';
-import Cookers from './Cookers/Cookers';
-import Restaurant from './Restaurant/Restaurant';
-import Footer from './Footer/Footer';
+import '../main.css'
+import Header from "./Header/Header.jsx";
+import Story from "./Story/Story.jsx";
+import Reservation from "./Reservation/Reservation";
+import OurDishes from "./ourDishes/OurDishes";
+import OurMenu from "./ourMenu/OurMenu";
+import Guests from "./Guests/Guests.jsx";
+import Gallery from "./Gallery/Gallery";
+import Cookers from "./Cookers/Cookers";
+import Restaurant from "./Restaurant/Restaurant";
+import Footer from "./Footer/Footer";
+import ShoppingCart from "./ShoppingCart/ShoppingCart";
 
-import ShoppingCart from './ShoppingCart/ShoppingCart';
-import Overlay from './ShoppingCart/Overlay/Overlay';
 
 function App() {
 
