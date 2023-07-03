@@ -1,6 +1,8 @@
 import React from "react";
 
 const Cookers = () => {
-    return (<></>)
+    return (<>
+      Я Асема
+    </>)
 }
 export default Cookers
