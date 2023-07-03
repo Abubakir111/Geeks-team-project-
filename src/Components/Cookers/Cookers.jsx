@@ -16,7 +16,6 @@ const Cookers = () =>
                         images.map((cooker, i) => <div className={styles.cookersCard} key={i}><img src={cooker} alt="img" /></div>)
                     }
                 </div>
-              <div>sdsdssd</div>
         </div>
     )
 }
