@@ -1,0 +1,123 @@
+.container{
+    top: 22px;
+    left: 14%;
+    width: 66%;
+    height: 100%;
+    background: burlywood;
+    position: absolute;
+    background-image: url('../../../asserts/Heder_img//hederMenu_images/Menufon.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid rgb(165, 135, 3);
+    border-radius: 5px ;
+}
+.ul{
+    margin: 0px;
+    padding: 5px 0px;
+    color: #fff;
+    font-family: Tinos;
+    font-weight: 400;
+    font-size: 20px;
+}
+.ul li{
+  padding-bottom: 10px;
+}
+span{
+    padding-left: 90px;
+}
+
+
+.imge{
+     width: 173px;
+     height: 173px;
+     margin-top: 40px;
+}
+.menu_container{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     font-family: Tinos;
+     font-weight: 400;
+     font-size: 40px;
+     color: aliceblue;
+     position: relative;
+}
+.closBtn{
+    top: 10px ;
+    right: 20px;
+     width: 60px;
+    position: absolute;
+    color:#fff;
+    font-size: 40px;
+    background: none;
+    border: none;
+}
+.menuBlock{
+    width: 100%;
+    height: 91%;
+    border: 2px solid rgb(158, 135, 135);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3,1fr);
+}
+.menuBlock1 {
+    border: 2px solid seagreen;
+    display:  flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.menuBlock1__title{
+     font-family: Tinos;
+     font-weight: 400;
+     font-size: 20px;
+     color: aliceblue;
+     padding: 20px 0px;
+}
+ .menuBlock1__inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    gap:90px;
+    flex-wrap: wrap;
+} 
+.menuBlock2 {
+     border: 2px solid seagreen;
+    display:  flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.menuBlock3{
+     border: 2px solid seagreen;
+    display:  flex;
+    justify-content: space-around;
+    flex-direction: column;
+} 
+@media screen and  (max-width:996px) and  (min-width:0px) {
+ .menuBlock1__inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    padding: 0px 40px;
+    gap: 0px;
+} 
+}
+ @media screen and  (max-width:608px) and  (min-width:0px) {
+ 
+.ul{
+    margin: 0px;
+    padding: 5px 0px;
+    color: #fff;
+    font-family: Tinos;
+    font-weight: 400;
+    font-size: 15px;
+}
+} 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import HeaderStyle from './HeaderStyle.module.css'
 import Headerimagelog from '../../asserts/Heder_img/headerLog.png'
 import HeaderLogo from '../../asserts/LOGO.png'
@@ -6,11 +6,18 @@ import HeaderCart from '../../asserts/Heder_img/cart.png'
 import Headerphone from '../../asserts/Heder_img/phone.png'
 import hederMenuGroop from '../../asserts/Heder_img/mediaHederGroop.png'
 import HeroMedioImg from '../../asserts/Heder_img/heroImage.png'
+import HedeMenu from "./HedeMenu/HedeMenu"
 import Button from "../UI/Button";
 import '../../main.css'
 import LogoCard from "./LogoCard";
 
-const Header = ({onClick}) => {
+const Header = ({ onClick }) => {
+    const [togle, setTogle] = useState(false)
+    const Toggles = () => {
+        setTogle(togle => !togle)
+        console.log(togle)
+    }
+
     return (<>
         <div className={HeaderStyle.headerWrapper}>
             <img className={HeaderStyle.headerImage} src={Headerimagelog} alt="Кртинка" />
@@ -49,7 +56,16 @@ const Header = ({onClick}) => {
                             <p className={HeaderStyle.TextContainp3}>ДОМ ЛУЧШЕЙ ЕДЫ</p>
                         </div>
                         <div className={HeaderStyle.button}>
-                            <Button className={HeaderStyle.buttonDesktop} textButton={"Меню"} w={137} h={47} bg={"#FF7400"} />
+                            <Button className={HeaderStyle.buttonDesktop}
+                                textButton={"Меню"}
+                                w={137} h={47}
+                                bg={"#FF7400"}
+                                onClick={Toggles}
+                            />{
+
+                                togle && <HedeMenu Toggles={Toggles} />
+                            }
+
                         </div>
 
                     </div>
