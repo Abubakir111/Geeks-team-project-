@@ -2,7 +2,7 @@ import React from "react";
 
 const Cookers = () => {
     return (<>
-      Я Асема
+      Я Асема !!
     </>)
 }
 export default Cookers
