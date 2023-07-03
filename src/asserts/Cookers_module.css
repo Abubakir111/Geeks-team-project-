@@ -1,0 +1,56 @@
+.wrapper {
+    padding-bottom: 60px;
+}
+
+.cookers {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px 20px;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.cookers div {
+    max-width: 350px;
+    transition: .5s;
+}
+
+.cookers div:hover {
+    transform: scale(1.14);
+}
+
+.cookers div img {
+    width: 100%;
+}
+
+.baner {
+    width: 100%;
+}
+
+.baner img {
+    width: 100%;
+}
+
+@media (max-width: 1088px) {
+    .cookers {
+        justify-content: space-around;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 520px) {
+    .baner {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 480px;
+    }
+
+    .baner img {
+        width: 900px;
+        height: 100%;
+    }
+}
