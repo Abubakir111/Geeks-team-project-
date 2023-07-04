@@ -1,5 +1,6 @@
 import React from "react"
 import Burger from '../../asserts/img-our-menu/burger-i.jpg'
+import Menu from '../../asserts/img-our-menu/menu-bg.jpg'
 
 const OurMenu = () => {
     return (<>
