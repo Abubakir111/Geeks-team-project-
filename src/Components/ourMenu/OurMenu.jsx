@@ -1,13 +1,13 @@
 import React from "react"
 import Burger from '../../asserts/img-our-menu/burger-i.jpg'
-import Menu from '../../asserts/img-our-menu/menu-bg.jpg'
+import OurMenuStyle from './OurMenuStyle.module.css'
+
 
 const OurMenu = () => {
     return (<>
-    <div className={OurMenuStyle.OurMenuWrapper}>
-        <div className="menu_item">
-            Наше меню
-        </div>
+    <div className="menu_title">
+        Наше меню
+    </div>
 
         <div className="menu_items">
 
@@ -49,7 +49,7 @@ const OurMenu = () => {
                 </div>
             </div>
         </div>
-    </div>
+
     </>)
 }
 export default OurMenu

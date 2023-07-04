@@ -7,14 +7,14 @@
     margin-bottom: 139px;
 }
 
-.dishes-title span {
+.dishes-title_span {
     color: #D67E34;
 }
 
 
 .burgers {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .burger-item {
@@ -23,8 +23,10 @@
     margin-bottom: 29px;
 }
 
-.burgers-image {
+.OurDishesImage {
     margin-right: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .burger-text {
