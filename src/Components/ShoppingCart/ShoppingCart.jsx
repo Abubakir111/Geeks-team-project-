@@ -75,7 +75,6 @@ const ShoppingCart = ({ close }) => {
         handleSearch();
     }, [searchValue]);
 
-
     return (
         <div>
             <div className={styles.cart}>

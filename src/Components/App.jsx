@@ -11,6 +11,8 @@ import Cookers from "./Cookers/Cookers";
 import Restaurant from "./Restaurant/Restaurant";
 import Footer from "./Footer/Footer";
 import ShoppingCart from "./ShoppingCart/ShoppingCart";
+import TableModal from "./TableModal/TableModal.jsx";
+import AnswerModal from "./TableModal/AnswerModal/AnswerModal.jsx";
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
     return (
         <>
             {modal && <ShoppingCart close={closeModal} />}
+            {modal && <AnswerModal close={closeModal}/>}
+            {modal && <TableModal close = {closeModal}/>}
             <Header onClick={showModal} />
             <Story />
             <Reservation />

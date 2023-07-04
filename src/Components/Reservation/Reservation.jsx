@@ -4,7 +4,7 @@ import React from 'react';
 
 
 
-const Reservation = () => {
+const Reservation = (onClick) => {
      return(
           <div className={classes.reservation}>
                <div className='container'>
@@ -14,7 +14,7 @@ const Reservation = () => {
                               <p className={classes.reservationDesc}>Только в этом месяце бизнес-ланч от 250 ₽</p>
                          </div>
                          <div className={classes.reservationButtonBlock}>
-                              <Button textButton={"ЗАКАЗ СТОЛИКА"} w={157} h={47} bg={"#FF7400"} />
+                              <Button onClick={onClick} textButton={"ЗАКАЗ СТОЛИКА"} w={157} h={47} bg={"#FF7400"}/>
                          </div>
                     </div>
                </div>
