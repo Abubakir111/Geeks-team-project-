@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../main.css'
 import Header from "./Header/Header.jsx";
 import Story from "./Story/Story.jsx";
@@ -25,21 +25,45 @@ function App() {
         setModal(false);
     };
 
+    const [bookingModal, setBookingModal] = useState(false)
+    const showBooking = () => {
+        setBookingModal(true)
+    }
+    const closeBooking = () => {
+        console.log(1)
+        setBookingModal(false)
+    }
+
+    useEffect(() => {
+        function handleScroll() {
+            const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+            if (scrollTop + clientHeight === scrollHeight) {
+                showBooking()
+                console.log('Достигнут низ страницы!');
+            }
+        }
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
     return (
         <>
             {modal && <ShoppingCart close={closeModal} />}
-            {modal && <AnswerModal close={closeModal}/>}
-            {modal && <TableModal close = {closeModal}/>}
-            <Header onClick={showModal} />
+            {/*{modal && <AnswerModal close={closeModal}/>}*/}
+            {bookingModal && <TableModal close={closeBooking}/>}
+            <Header delivery={showModal} openTable={showBooking} />
             <Story />
-            <Reservation />
+            <Reservation onClick={showBooking}/>
             <OurDishes />
             <OurMenu />
             <Guests />
             <Gallery />
             <Cookers />
             <Restaurant />
-            <Footer />
+            <Footer openBooking={showBooking}/>
         </>
     );
 }

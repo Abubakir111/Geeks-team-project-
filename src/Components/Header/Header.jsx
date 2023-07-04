@@ -10,7 +10,7 @@ import Button from "../UI/Button";
 import '../../main.css'
 import LogoCard from "./LogoCard";
 
-const Header = ({onClick}) => {
+const Header = ({delivery, openTable}) => {
     return (<>
         <div className={HeaderStyle.headerWrapper}>
             <img className={HeaderStyle.headerImage} src={Headerimagelog} alt="Кртинка" />
@@ -29,7 +29,7 @@ const Header = ({onClick}) => {
                             <div> ГЛАВНАЯ</div>
                             <div>МЕНЮ</div>
                             <div>О НАС</div>
-                            <div>БРОНЬ</div>
+                            <div onClick={openTable}>БРОНЬ</div>
                             <div className={HeaderStyle.cortLince}>
                                 <img src={HeaderCart} alt="карзинка" />
                             </div>
@@ -39,7 +39,7 @@ const Header = ({onClick}) => {
                                 <p>Свяжитесь с нами для</p>
                                 <p>бронирования</p>
                             </div>
-                            <Button onClick={onClick} textButton={"Доставка"} w={157} h={47} bg={"#FF7400"} />
+                            <Button onClick={delivery} textButton={"Доставка"} w={157} h={47} bg={"#FF7400"} />
                         </div>
                     </div>
                     <div className={HeaderStyle.TextContain}>

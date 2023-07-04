@@ -10,7 +10,7 @@ import logo from '../../asserts/LOGO.png'
 import Button from "../UI/Button.jsx";
 import React from "react";
 
-const Footer = () => {
+const Footer = ({openBooking}) => {
     return (
         <div className={styles.footer}>
             <div className={`${styles.mobile_container} container`}>
@@ -34,7 +34,7 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className={styles.btn}>
-                                <Button textButton={"ЗАКАЗ СТОЛИКА"} w={157} h={47} bg={"#FF7400"} />
+                                <Button onClick={openBooking} textButton={"ЗАКАЗ СТОЛИКА"} w={157} h={47} bg={"#FF7400"} />
                             </div>
                         </div>
                     </div>

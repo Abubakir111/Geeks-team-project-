@@ -4,7 +4,7 @@ import React from 'react';
 
 
 
-const Reservation = (onClick) => {
+const Reservation = ({onClick}) => {
      return(
           <div className={classes.reservation}>
                <div className='container'>
