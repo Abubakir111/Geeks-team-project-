@@ -6,15 +6,16 @@ import Pizza from '../../asserts/img-our-dishes/pizza.jpg'
 const OurDishes = () => {
     return (<>
         <div className="Dishes">
-            <div className="dishes_title">
-                Наши <span>Блюда</span>
+            <div className={OurDishesStyle.dishes_title}>
+                Наши <span className={OurDishesStyle.dishes_title_span}>Блюда</span>
             </div>
-            <div className={OurDishesStyle.OurDishesWrapper}>
+            <div className="burgers">
+                <div className=""></div>
                 <img className={OurDishesStyle.OurDishesImage} src={Pizza} alt="there pizza" />
             </div>
 
             <div className="burger_items">
-                <div className="burger_item">
+                <div className={OurDishesStyle.burger_item}>
                     <img className={OurDishesStyle.OurDishesImage} src={Burger} alt="there burger" />
                 </div>
                 <div className="burger_text">
