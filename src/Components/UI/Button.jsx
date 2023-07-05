@@ -1,7 +1,7 @@
 import React from 'react';
 import ButtonStyles from './ButtonStyle.module.css';
 
-const Button = ({ textButton, w, h, bg, onClick }) => {
+const Button = ({ textButton, w, h, bg, onClick , disabled}) => {
 
     let ButtonStyle = {
         width: w + 'px',
@@ -13,7 +13,7 @@ const Button = ({ textButton, w, h, bg, onClick }) => {
         cursor: 'pointer',
     };
     return (<>
-        <button onClick={onClick} className={ButtonStyles.button} style={ButtonStyle}>{textButton}</button>
+        <button disabled={disabled} onClick={onClick} className={ButtonStyles.button} style={ButtonStyle}>{textButton}</button>
     </>);
 };
 export default Button;
