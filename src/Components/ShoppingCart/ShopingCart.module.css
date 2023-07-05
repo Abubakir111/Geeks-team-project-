@@ -79,6 +79,12 @@
 
 .cart__ul {
     margin-top: 20px;
+    min-height: 210px;
+}
+
+.cart__list {
+    position: relative;
+    margin-bottom: 20px;
 }
 
 .plus {
@@ -127,6 +133,35 @@
 .totalPriceItem {
     font-weight: bolder;
     font-size: 20px;
+}
+
+.name {
+    cursor: help;
+}
+
+.modalPic {
+    position: absolute;
+    z-index: 100000000;
+    top: 50%;
+    /* Положение по вертикали - середина родительского элемента */
+    left: 50%;
+    /* Положение по горизонтали - середина родительского элемента */
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    animation: fadeIn .7s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @media screen and (min-width: 0px) and (max-width: 335px) {

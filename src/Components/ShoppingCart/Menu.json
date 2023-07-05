@@ -1,97 +1,135 @@
 [
   {
+    "id": 1,
     "name": "Бургер",
     "category": "Основное блюдо",
-    "price": 400
+    "price": 400,
+    "img": "https://img.freepik.com/free-photo/tasty-burger-isolated-on-white-background-fresh-hamburger-fastfood-with-beef-and-cheese_90220-1063.jpg?w=740&t=st=1688542304exp=1688542904hmac=f123664433d2e42acf69f4faff130cb8cd4a483cc8906cab03059b2f6808b4d3"
   },
   {
+    "id": 2,
     "name": "Цезарь салат",
     "category": "Закуска",
-    "price": 800
+    "price": 800,
+    "img": "https://img.freepik.com/free-photo/flat-lay-salad-with-chicken-and-sesame-seeds_23-2148700369.jpg?size=626&ext=jpg&ga=GA1.2.421223546.1682579350&semt=ais"
   },
   {
+    "id": 3,
     "name": "Паста Карбонара",
     "category": "Основное блюдо",
-    "price": 1300
+    "price": 1300,
+    "img": "https://img.freepik.com/free-photo/top-view-of-a-cheesy-pasta-on-a-white-plate_181624-18267.jpg?size=626&ext=jpg&ga=GA1.1.421223546.1682579350&semt=sph"
   },
   {
+    "id": 4,
     "name": "Картофель фри",
     "category": "Гарнир",
-    "price": 400
+    "price": 400,
+    "img": "https://img.freepik.com/free-photo/crispy-french-fries-with-ketchup-and-mayonnaise_1150-26588.jpg?size=626&ext=jpg&ga=GA1.2.421223546.1682579350&semt=ais"
   },
   {
+    "id": 5,
     "name": "Пицца с сыром",
     "category": "Основное блюдо",
-    "price": 1500
+    "price": 1500,
+    "img": "https://img.freepik.com/free-photo/front-view-pizza-with-cheese-on-the-brown-round-wooden-desk-and-dark-surface_140725-14476.jpg?size=626&ext=jpg&ga=GA1.1.421223546.1682579350&semt=ais"
   },
   {
+    "id": 6,
     "name": "Луковые кольца",
     "category": "Гарнир",
-    "price": 200
+    "price": 200,
+    "img": "https://img.freepik.com/free-photo/top-view-of-onion-rings-with-different-sauces-in-a-plate-on-the-table_181624-41229.jpg?size=626&ext=jpg&ga=GA1.2.421223546.1682579350&semt=ais"
   },
   {
+    "id": 7,
     "name": "Капрезе салат",
     "category": "Закуска",
-    "price": 900
+    "price": 900,
+    "img": "https://img.freepik.com/free-photo/italian-caprese-salad-for-valentine-s-day_1220-3527.jpg?size=626&ext=jpg&ga=GA1.1.421223546.1682579350&semt=sph"
   },
   {
+    "id": 8,
     "name": "Чечевичный суп",
     "category": "Суп",
-    "price": 400
+    "price": 400,
+    "img": "https://img.freepik.com/free-photo/lentil-soup-with-chopped-herbs-and-crackers_114579-3534.jpg?size=626&ext=jpg&ga=GA1.1.421223546.1682579350&semt=ais"
   },
   {
+    "id": 9,
     "name": "Крем суп",
     "category": "Суп",
-    "price": 450
+    "price": 450,
+    "img": "https://img.freepik.com/free-photo/lentil-soup-with-spices-and-lemon-slice_114579-3058.jpg?size=626&ext=jpg&ga=GA1.1.421223546.1682579350&semt=ais"
   },
   {
+    "id": 10,
     "name": "Картофельное пюре",
     "category": "Гарнир",
-    "price": 500
+    "price": 500,
+    "img": "https://img.freepik.com/free-photo/fresh-and-flavorful-mashed-potatoes_2829-11458.jpg?size=626&ext=jpg&ga=GA1.1.421223546.1682579350&semt=sph"
   },
   {
+    "id": 11,
     "name": "Брускетта",
     "category": "Закуска",
-    "price": 700
+    "price": 700,
+    "img": "https://img.freepik.com/free-photo/sandwich-with-salted-salmon-and-cream-cheese_2829-8326.jpg?size=626&ext=jpg&ga=GA1.1.421223546.1682579350&semt=sph"
   },
   {
+    "id": 12,
     "name": "Медовик",
     "category": "Десерт",
-    "price": 500
+    "price": 500,
+    "img": "https://img.freepik.com/free-photo/carrot-cake-with-2020-candles-and-a-cup-of-tea-on-grey-concrete_114579-4863.jpg?size=626&ext=jpg&ga=GA1.1.421223546.1682579350&semt=sph"
   },
   {
+    "id": 13,
     "name": "Тирамису",
     "category": "Десерт",
-    "price": 700
+    "price": 700,
+    "img": "https://img.freepik.com/free-photo/delicious-cake_144627-16761.jpg?size=626&ext=jpg&ga=GA1.1.421223546.1682579350&semt=sph"
   },
   {
-    "name": "Салат Цезарь с курицей",
+    "id": 14,
+    "name": "Цезарь с курицей",
     "category": "Основное блюдо",
-    "price": 1200
+    "price": 1200,
+    "img": "https://img.freepik.com/free-photo/a-front-view-sliced-chicken-with-vegetables-greens-inside-white-plate-salted-peppered-along-with-red-wine-crisps-on-the-grey-desk-dinner-dishes_140725-16105.jpg?size=626&ext=jpg&ga=GA1.1.421223546.1682579350&semt=sph"
   },
   {
+    "id": 15,
     "name": "Брюссельская капуста",
     "category": "Гарнир",
-    "price": 600
+    "price": 600,
+    "img": "https://img.freepik.com/free-photo/chicken-with-boiled-potatoes-on-blue-plate_114579-82980.jpg?size=626&ext=jpg&ga=GA1.1.421223546.1682579350&semt=ais"
   },
   {
+    "id": 16,
     "name": "Весенние роллы",
     "category": "Закуска",
-    "price": 800
+    "price": 800,
+    "img": "https://img.freepik.com/free-photo/side-view-california-and-philadelphia-rolls-with-cream-cheese-cucumber-salmon-tobiko-caviar-soy-sauce-and-ginger-on-a-board_141793-4796.jpg?size=626&ext=jpg&ga=GA1.1.421223546.1682579350&semt=sph"
   },
   {
-    "name": "Салат из свежих овощей",
+    "id": 17,
+    "name": "Салат из овощей",
     "category": "Закуска",
-    "price": 600
+    "price": 600,
+    "img": "https://img.freepik.com/free-photo/front-view-of-vegan-salad-with-fresh-ingredients-in-a-plate-and-pepper-on-black-cutting-board_179666-47208.jpg?size=626&ext=jpg&ga=GA1.1.421223546.1682579350&semt=ais"
   },
   {
+    "id": 18,
     "name": "Лосось-стейк",
     "category": "Основное блюдо",
-    "price": 1900
+    "price": 1900,
+    "img": "https://img.freepik.com/free-photo/a-plate-of-food-with-a-plate-of-fish-and-vegetables_188544-53752.jpg?size=626&ext=jpg&ga=GA1.1.421223546.1682579350&semt=sph"
   },
   {
-    "name": "Капустный салат",
+    "id": 19,
+    "name": "Фирменный салат",
     "category": "Гарнир",
-    "price": 300
+    "price": 300,
+    "img": "https://img.freepik.com/free-photo/top-view-of-vegan-salad-with-fresh-ingredients-in-a-plate-on-black-cutting-board_179666-47301.jpg?size=626&ext=jpg&ga=GA1.1.421223546.1682579350&semt=ais"
   }
 ]
