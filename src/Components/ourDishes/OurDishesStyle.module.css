@@ -1,4 +1,4 @@
-.dishes-title {
+.dishes_title {
     font-family: 'Tinos', serif;
     font-size: 54px;
     font-weight: 400;
@@ -7,7 +7,7 @@
     margin-bottom: 139px;
 }
 
-.dishes-title_span {
+.dishes_title_span {
     color: #D67E34;
 }
 
@@ -17,7 +17,7 @@
     justify-content: center; 
 }
 
-.burger-item {
+.burger_item {
     display: flex;
     align-items: center;
     margin-bottom: 29px;
@@ -29,7 +29,7 @@
     justify-content: center;
 }
 
-.burger-text {
+.burger_text {
     font-family: 'Tinos', serif;
     font-size: 26px;
     margin-left: 20px;
