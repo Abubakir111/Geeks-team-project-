@@ -18,6 +18,10 @@
     z-index: -1;
     object-fit: cover;
 }
+img{
+    width: max-content;
+    height: max-content;
+}
 .headerImageMedia{
     display: none;
 }
@@ -344,6 +348,7 @@
 }
 .button{
     margin: auto;
+    position: absolute;
 }
 .buttonDesktop{
     display: none;
