@@ -1,6 +1,6 @@
 import React from "react"
 import Burger from '../../asserts/img-our-menu/burger-i.jpg'
-
+import OurMenuStyle from './OurMenuStyle.module.css'
 const OurMenu = () => {
     return (<>
         <div className="menu_title">
