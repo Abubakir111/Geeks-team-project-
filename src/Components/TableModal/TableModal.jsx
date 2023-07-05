@@ -3,7 +3,7 @@ import Overlay from "../ShoppingCart/Overlay/Overlay.jsx";
 import {useState} from "react";
 import AnswerModal from "./AnswerModal/AnswerModal.jsx";
 
-const TableModal = ({close}) => {
+const TableModal = ({close, name = 'Забронировать Столик!'}) => {
     const [value, setValue] = useState("");
     const [ok, setOk] = useState(false);
     const [success, setSuccess] = useState(true)
@@ -69,7 +69,7 @@ const TableModal = ({close}) => {
                                 disabled={!ok}
                                 className={`${classes.btn} ${classes.btn_dark} ${classes.btn_min} ${ok ? '' : classes.modal__btnDisabled}`}
                             >
-                                Забронировать столик
+                                {name}
                             </button>
                         </form>
                     </div>
