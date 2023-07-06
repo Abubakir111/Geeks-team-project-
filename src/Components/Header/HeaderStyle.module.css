@@ -348,11 +348,11 @@ img{
 }
 .button{
     margin: auto;
-    position: absolute;
+    position: none;
 }
-.buttonDesktop{
+/* .buttonDesktop{
     display: none;
-}
+} */
 .buttonMedia{
     display: block;
 }
@@ -371,11 +371,26 @@ img{
     gap: 30px;
 }
 } 
-@media screen and  (max-width:319px) and  (min-width:0px) {
-.TextContainp2{
-    /* font-family: 'Tinos', serif;
-    font-weight: 400; */
+/*@media screen and  (max-width:319px) and  (min-width:0px) {
+ .TextContainp2{
+     font-family: 'Tinos', serif;
+    font-weight: 400; 
     font-size: 22px;
 }
-
+.button{
+    width: 100%;
+    margin: auto;
+    position: none;
 }
+.buttonDesktop{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.butnMenuContainer{
+    width: 200px;
+    height: max-content;
+    margin: auto;
+    background: red;
+}
+} */
