@@ -1,59 +1,17 @@
-import React from "react"
-import Burger from '../../asserts/img-our-menu/burger-i.jpg'
-import OurMenuStyle from './OurMenuStyle.module.css'
-const OurMenu = () => {
-    return (<>
-        <div className="menu_title">
-            Наше меню
-        </div>
+import classes from './OurMenuStyle.module.css'
+import Slider from "./Slider.jsx";
 
-        <div className="menu_items">
-
-            <div className="menu_item">
-                Наше меню
-            </div>
-
-            <div className="menu_items">
-
-                <div className="menu_item">
-                    <div className="menu_image">
-                        <img className={OurMenuStyle.OurMenuImage} src={Burger} alt="there burger2" />
-                    </div>
-
-                    <div className="menu_text">
-                        Гамбургер макси
-                    </div>
-
-                    <div className="menu_subtext">
-                        Максимально толстый <br /> слой мяса
-                    </div>
-
-                    <div className="menu_button">
-                        <a href="#" className="menu_btn">ЗАКАЗАТЬ</a>
-                    </div>
-
-                    <div className="menu_item">
-                        <img className={OurMenuStyle.OurMenuImage} src={Burger} alt="there burger2" />
-                    </div>
-
-                    <div className="menu_text">
-                        Гамбургер макси
-                    </div>
-
-                    <div className="menu_subtext">
-                        Максимально толстый <br /> слой мяса
-                    </div>
-
-                    <div className="menu_button">
-                        <a href="#" className="menu_btn">ЗАКАЗАТЬ</a>
-                    </div>
-
-                    <div className="menu_item">
-                        <img className={OurMenuStyle.OurMenuImage} src={Burger} alt="there burger2" />
-                    </div>
+const OurMenu = ({onTopPage}) => {
+    return (
+        <div className={classes.OurMenu} id={'menu'}>
+            <div className={`${classes.mobile__container} container`}>
+                <div className={classes.OurMenu__wrap}>
+                    <h1 className={classes.OurMenu__title}>Наше меню</h1>
+                    <Slider onTopPage={onTopPage}/>
                 </div>
             </div>
         </div>
-    </>)
-}
-export default OurMenu
+    );
+};
+
+export default OurMenu;

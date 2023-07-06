@@ -1,43 +1,29 @@
-import React from "react"
-import OurDishesStyle from '../OurDishes/OurDishesStyle.module.css'
-import Burger from '../../asserts/img-our-dishes/burger.jpg'
-import Pizza from '../../asserts/img-our-dishes/pizza.jpg'
+import Title from '../UI/Title.jsx';
+import classes from './OurDishesStyle.module.css';
+import foodItems from '../ourMenu/foodItems.js';
 
 const OurDishes = () => {
-    return (<>
-        <div className="Dishes">
-            <div className={OurDishesStyle.dishes_title}>
-                Наши <span className={OurDishesStyle.dishes_title_span}>Блюда</span>
-            </div>
-            <div className="burgers">
-                <div className=""></div>
-                <img className={OurDishesStyle.OurDishesImage} src={Pizza} alt="there pizza" />
-            </div>
-
-            <div className="burger_items">
-                <div className={OurDishesStyle.burger_item}>
-                    <img className={OurDishesStyle.OurDishesImage} src={Burger} alt="there burger" />
-                </div>
-                <div className="burger_text">
-                    Гамбургер мини -------------- 220 ₽
-                </div>
-
-                <div className="burger_item">
-                    <img className={OurDishesStyle.OurDishesImage} src={Burger} alt="there burger" />
-                    <div className="burger_text">
-                        Гамбургер мини -------------- 220 ₽
+     return (
+          <div className={classes.dishes}>
+               <div className='container'>
+                    <div className={classes.dishes__title}>
+                         <Title title={'Наши'} item={'Блюда'} />
                     </div>
-                </div>
-
-                <div className="burger_item">
-                    <img className={OurDishesStyle.OurDishesImage} src={Burger} alt="there burger" />
-                    <div className="bureger_text">
-                        Гамбургер мини -------------- 220 ₽
+                    <div className={classes.dishes__container}>
+                         <div className={classes.dishes__left}></div>
+                         <div className={`${classes.dishes__right} ${classes.dishes__mobileContainer}`}>
+                              {foodItems.map(item => (
+                                   <div key={item.id} className={classes.dishes__wrap}>
+                                        <img className={classes.dishes__img} src={item.img} alt='food' />
+                                        <div className={classes.dishes__name}>{item.name}</div>
+                                        <div className={classes.dishes__price}>{item.price} сом</div>
+                                   </div>
+                              ))}
+                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </>)
-}
+               </div>
+          </div>
+     );
+};
 
-export default OurDishes
+export default OurDishes;

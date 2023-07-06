@@ -1,160 +1,181 @@
 .story {
-  margin-top: 150px;
+    margin-top: 150px;
 }
+
 .storyInner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-@media (max-width: 1036px) {
-  .storyInner {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-}
-@media (max-width: 1036px) {
-  .storyImageBlock {
-    padding-top: 45px;
-    padding-bottom: 50px;
-  }
-}
-.storyTextBlock {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-.storyOrange {
-  color: rgb(214, 126, 52);
-}
-.storyDesc {
-  font-family: Open Sans;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-  text-align: center;
-  color: rgb(101, 99, 99);
-  width: 445px;
-}
-@media (max-width: 475px) {
-  .storyDesc {
-    width: 310px;
-  }
-}
-.storyLeftBlock {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-@media (max-width: 475px) {
-  .storyText {
-    padding: 10px;
-  }
-}
-.storyTitle {
-  padding-bottom: 21px;
-  font-family: Tinos;
-  font-size: 54px;
-  font-weight: 400;
-  line-height: 62px;
-  text-align: center;
-}
-@media (max-width: 475px) {
-  .storyTitle {
-    width: 180px;
-  }
-}
-.storyTextDishes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 444px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-@media (max-width: 1036px) {
-  .storyTextDishes {
-    padding-top: 50px;
-  }
-}
-@media (max-width: 475px) {
-  .storyTextDishes {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 250px;
-    -webkit-box-pack: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+@media (max-width: 1036px) {
+    .storyInner {
+        -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
+        justify-content: center;
+        -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 1036px) {
+    .storyImageBlock {
+        padding-top: 45px;
+        padding-bottom: 50px;
+    }
+}
+
+.storyTextBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+.storyOrange {
+    color: rgb(214, 126, 52);
+}
+
+.storyDesc {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    color: rgb(101, 99, 99);
+    width: 445px;
+}
+
+@media (max-width: 475px) {
+    .storyDesc {
+        width: 310px;
+    }
+}
+
+.storyLeftBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+@media (max-width: 475px) {
+    .storyText {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.storyTitle {
+    padding-bottom: 21px;
+    font-family: Tinos;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 62px;
+    text-align: center;
+}
+
+@media (max-width: 475px) {
+    .storyTitle {
+        width: 180px;
+    }
+}
+
+.storyTextDishes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 444px;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 1036px) {
+    .storyTextDishes {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 475px) {
+    .storyTextDishes {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 250px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    padding-top: 100px;
-  }
+        flex-direction: column;
+        padding-top: 100px;
+    }
 }
+
 .storyNumber {
-  font-family: Open Sans;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 54px;
-  text-align: center;
-  color: rgb(188, 144, 96);
+    font-family: Open Sans;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: center;
+    color: rgb(188, 144, 96);
 }
+
 .storyDishes {
-  font-family: Open Sans;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 27px;
-  text-align: center;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
 }
+
 .storyImage {
-  width: 540px;
-  height: 500px;
+    width: 540px;
+    height: 500px;
 }
+
 @media (max-width: 590px) {
-  .storyImage {
-    width: 290px;
-    height: 257px;
-  }
+    .storyImage {
+        width: 290px;
+        height: 257px;
+    }
 }

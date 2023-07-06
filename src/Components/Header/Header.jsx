@@ -21,7 +21,7 @@ const Header = ({ delivery, openTable }) => {
 
     return(<>
     <div className={HeaderStyle.headerWrapper}>
-        <img className={HeaderStyle.headerImage} src={Headerimagelog} alt="Кртинка" />
+        <img className={HeaderStyle.headerImage} src={Headerimagelog} alt="Кртинка" id='logo'/>
         <img className={HeaderStyle.headerImageMedia} src={HeroMedioImg} alt="Кртинка" />
         <div className={HeaderStyle.container} >
 
@@ -34,12 +34,20 @@ const Header = ({ delivery, openTable }) => {
                     </div>
                     <img className={HeaderStyle.hederMenuGroop} src={hederMenuGroop} alt="Тут логотип" />
                     <div className={HeaderStyle.headerNavBar}>
-                        <div> ГЛАВНАЯ</div>
-                        <div>МЕНЮ</div>
-                        <div>О НАС</div>
-                        <div onClick={openTable}>БРОНЬ</div>
+                        <div>
+                            <a href='#'>ГЛАВНАЯ</a>
+                        </div>
+                        <div>
+                            <a href='#menu'>МЕНЮ</a>
+                        </div>
+                        <div>
+                            <a href='#story'>О НАС</a>
+                        </div>
+                        <div onClick={openTable}>
+                            <a href='#'>БРОНЬ</a>
+                        </div>
                         <div className={HeaderStyle.cortLince}>
-                            <img src={HeaderCart} alt="карзинка" />
+
                         </div>
                         <div >
                             <img src={Headerphone} alt="" className={HeaderStyle.headerphone} />
