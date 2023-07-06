@@ -1,36 +1,118 @@
-.dishes_title {
-    font-family: 'Tinos', serif;
-    font-size: 54px;
-    font-weight: 400;
-    text-align: center;
+.dishes {
     padding-top: 132px;
+    padding-bottom: 150px;
+}
+
+.dishes__container {
+    display: flex;
+
+}
+
+.dishes__img:hover {
+    transform: scale(1.2);
+}
+
+.dishes__title {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     margin-bottom: 139px;
 }
 
-.dishes_title_span {
-    color: #D67E34;
+.dishes__left {
+    background-image: url("../../asserts/img-our-dishes/pizza.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 478px;
+    width: 445px;
+    min-width: 445px;
+    margin-right: 30px;
 }
 
-
-.burgers {
-    display: flex;
-    justify-content: center; 
+.dishes__right {
+    width: 100%;
+    overflow-y: scroll; /* Добавьте прокрутку по оси Y */
+    height: 478px; /* Задайте высоту контейнера слайдера */
 }
 
-.burger_item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 29px;
-}
-
-.OurDishesImage {
-    margin-right: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.burger_text {
-    font-family: 'Tinos', serif;
+.dishes__name {
+    font-family: 'Tinos', sans-serif;
     font-size: 26px;
-    margin-left: 20px;
+    flex: 1;
+}
+
+.dishes__price {
+    font-family: 'Tinos', sans-serif;
+    font-size: 26px;
+}
+
+.dishes__img {
+    width: 180px;
+    height: 140px;
+    object-fit: cover;
+    margin-right: 30px;
+    transition: transform .7s ease;
+}
+
+.dishes__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.dishes__wrap:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 0px) and (max-width: 510px) {
+    .dishes__name {
+        margin-top: 20px;
+    }
+
+    .dishes__left {
+        margin: 0;
+        margin-bottom: 50px;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .dishes__container {
+        flex-wrap: wrap;
+    }
+
+    .dishes__mobileContainer {
+        margin: 0 auto;
+        max-width: 95%;
+    }
+
+    .dishes__wrap {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 510px) and (max-width: 950px) {
+    .dishes__mobileContainer {
+        margin: 0 auto;
+        max-width: 95%;
+    }
+
+    .dishes__left {
+        margin: 0;
+        margin-bottom: 50px;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .dishes__container {
+        flex-wrap: wrap;
+    }
+
+    .dishes__mobileContainer {
+        margin: 0 auto;
+        max-width: 95%;
+    }
 }

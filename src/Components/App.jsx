@@ -12,8 +12,6 @@ import Restaurant from "./Restaurant/Restaurant";
 import Footer from "./Footer/Footer";
 import ShoppingCart from "./ShoppingCart/ShoppingCart";
 import TableModal from "./TableModal/TableModal.jsx";
-import AnswerModal from "./TableModal/AnswerModal/AnswerModal.jsx";
-
 
 function App() {
 
@@ -30,7 +28,6 @@ function App() {
         setBookingModal(true)
     }
     const closeBooking = () => {
-        console.log(1)
         setBookingModal(false)
     }
 
@@ -39,7 +36,6 @@ function App() {
             const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
             if (scrollTop + clientHeight === scrollHeight) {
                 showBooking()
-                console.log('Достигнут низ страницы!');
             }
         }
         window.addEventListener('scroll', handleScroll);
@@ -52,13 +48,12 @@ function App() {
     return (
         <>
             {modal && <ShoppingCart close={closeModal} />}
-            {/*{modal && <AnswerModal close={closeModal}/>}*/}
             {bookingModal && <TableModal close={closeBooking}/>}
             <Header delivery={showModal} openTable={showBooking} />
             <Story />
             <Reservation onClick={showBooking}/>
-            <OurDishes />
-            <OurMenu />
+            <OurDishes/>
+            <OurMenu onTopPage={showModal}/>
             <Guests />
             <Gallery />
             <Cookers />

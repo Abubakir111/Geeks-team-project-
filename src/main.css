@@ -6,6 +6,11 @@
 :root {
   --bg-color: #FFFFFF;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 .container{
     max-width: 1110px;
     margin: 0 auto;  
@@ -13,5 +18,20 @@
 
 a {
     text-decoration: none;
+    color: white;
+}
+
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+    content: '';
+    color: #D67E34;
+}
+
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-prev:after {
+    content: '';
+    color: #D67E34;
+}
+
+.swiper-pagination-bullet-active {
+    background: #D67E34 !important;
 }
 

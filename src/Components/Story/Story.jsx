@@ -1,9 +1,10 @@
 import classes from './Story.module.css';
 import dishes from '../../asserts/dihes.png';
+import Title from '../UI/Title.jsx';
 
 const Story = () => {
      return (
-          <div className={classes.story}>
+          <div className={classes.story} id={'story'}>
                <div className='container'>
                     <div className={classes.storyInner}>
                          <div className={classes.storyImageBlock}>
@@ -11,7 +12,7 @@ const Story = () => {
                          </div>
                          <div className={classes.storyTextBlock}>
                               <div className={classes.storyLeftBlock}>
-                                   <h3 className={classes.storyTitle}>Наша <span className={classes.storyOrange}>История</span></h3>
+                                   <Title title={'Наша'} item={'История'}/>
                                    <p className={classes.storyDesc}>Как и у любого другого самобытного места, у нас есть своя, особая история.
                                         Идея ресторана пришла основателям
                                         неожиданно. Во время прогулки по лесу создатель нашего

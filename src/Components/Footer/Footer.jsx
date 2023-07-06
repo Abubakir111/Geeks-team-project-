@@ -12,7 +12,7 @@ import React from "react";
 
 const Footer = ({openBooking}) => {
     return (
-        <div className={styles.footer}>
+        <div className={styles.footer} id={'footer'}>
             <div className={`${styles.mobile_container} container`}>
                 <div className={styles.footer__wrapper}>
                     <div className={styles.footer__left}>
@@ -21,16 +21,24 @@ const Footer = ({openBooking}) => {
                             <h2>Подпишитесь на нас!</h2>
                             <div className={styles.footer__follow_icon}>
                                 <div className={styles.footer__follow_icon_item}>
-                                    <img src={icon1} alt="icon1" />
+                                    <a target="_blank" href='https://geeks.kg/'>
+                                        <img src={icon1} alt="icon1" />
+                                    </a>
                                 </div>
                                 <div className={styles.footer__follow_icon_item}>
-                                    <img src={icon2} alt="icon2" />
+                                    <a target="_blank" href='https://geeks.kg/'>
+                                        <img src={icon2} alt="icon2" />
+                                    </a>
                                 </div>
                                 <div className={styles.footer__follow_icon_item}>
-                                    <img src={icon3} alt="icon3" />
+                                    <a target="_blank" href='https://geeks.kg/'>
+                                        <img src={icon3} alt="icon3" />
+                                    </a>
                                 </div>
                                 <div className={styles.footer__follow_icon_item}>
-                                    <img src={icon4} alt="icon4" />
+                                    <a target="_blank" href='https://geeks.kg/'>
+                                        <img src={icon4} alt="icon4" />
+                                    </a>
                                 </div>
                             </div>
                             <div className={styles.btn}>
@@ -45,13 +53,13 @@ const Footer = ({openBooking}) => {
                                 <a href="#">Главная</a>
                             </div>
                             <div className={styles.footer__links_item}>
-                                <a href="#">Меню</a>
+                                <a href="#menu">Меню</a>
                             </div>
                             <div className={styles.footer__links_item}>
-                                <a href="#">О нас</a>
+                                <a href="#story">О нас</a>
                             </div>
                             <div className={styles.footer__links_item}>
-                                <a href="#">Бронь</a>
+                                <a href="#footer" onClick={openBooking}>Бронь</a>
                             </div>
                             <div className={styles.footer__links_item}>
                                 <a href="#">Для соотрудничества</a>
