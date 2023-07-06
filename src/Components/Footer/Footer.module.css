@@ -67,6 +67,10 @@
     align-items: center;
 }
 
+.footer__follow_icon_item {
+    cursor: pointer;
+}
+
 .footer__follow-icon_item > img {
     width: 150px;
 }

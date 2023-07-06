@@ -2,6 +2,13 @@
     padding-bottom: 60px;
 }
 
+.titleWrap {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
 .cookers {
     margin-top: 100px;
     display: flex;
@@ -18,7 +25,7 @@
 }
 
 .cookers div:hover {
-    transform: scale(1.14);
+    transform: scale(1.1);
 }
 
 .cookers div img {
