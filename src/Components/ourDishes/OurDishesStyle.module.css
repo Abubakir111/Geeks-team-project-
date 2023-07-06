@@ -9,7 +9,10 @@
 }
 
 .dishes__img:hover {
-    transform: scale(1.2);
+    filter: brightness(1) blur(0);
+    z-index: 10000;
+    height: 170px;
+    width: 210px;
 }
 
 .dishes__title {
@@ -33,7 +36,7 @@
 
 .dishes__right {
     width: 100%;
-    overflow-y: scroll; /* Добавьте прокрутку по оси Y */
+    overflow: hidden; /* Добавьте прокрутку по оси Y */
     height: 478px; /* Задайте высоту контейнера слайдера */
 }
 
@@ -53,7 +56,8 @@
     height: 140px;
     object-fit: cover;
     margin-right: 30px;
-    transition: transform .7s ease;
+    transition: height .7s ease, filter .7s ease, flex .7s ease, width .7s ease;
+    filter: brightness(.7) blur(.3px);
 }
 
 .dishes__wrap {
@@ -67,10 +71,32 @@
     margin-bottom: 0;
 }
 
-@media screen and (min-width: 0px) and (max-width: 510px) {
+@media screen and (min-width: 0px) and (max-width: 450px) {
     .dishes__name {
-        margin-top: 20px;
+        font-size: 26px;
+        position: absolute;
+        top: 10px;
+        color: white;
     }
+
+    .dishes__price {
+        font-size: 24px;
+        position: absolute;
+        top: 40px;
+        color: white;
+    }
+
+    .dishes__img {
+        margin-right: 0;
+        filter: brightness(.4) blur(1px);
+        transition: height .7s ease, filter .7s ease, flex .7s ease, width .7s ease;
+    }
+
+    .dishes__img:hover {
+        margin-right: 0;
+        filter: brightness(.8) blur(0);
+    }
+
 
     .dishes__left {
         margin: 0;
@@ -94,7 +120,7 @@
     }
 }
 
-@media screen and (min-width: 510px) and (max-width: 950px) {
+@media screen and (min-width: 450px) and (max-width: 950px) {
     .dishes__mobileContainer {
         margin: 0 auto;
         max-width: 95%;
