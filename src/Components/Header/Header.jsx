@@ -11,7 +11,7 @@ import Button from "../UI/Button";
 import '../../main.css'
 import LogoCard from "./LogoCard";
 
-const Header = ({ delivery, openTable }) =  > {
+const Header = ({ delivery, openTable }) => {
 
     const [togle, setTogle] = useState(false)
     const Toggles = () => {
