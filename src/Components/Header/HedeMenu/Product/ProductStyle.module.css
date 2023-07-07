@@ -12,9 +12,9 @@
     width: max-content;
     margin: 20px auto 10px auto;
     display: block;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       font-family: 'Tinos', serif;
     font-size: 35px;
-    font-weight: 700;
+    font-weight: 400;
     color: rgb(255, 116, 0);
 }
 
