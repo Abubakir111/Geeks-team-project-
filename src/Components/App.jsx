@@ -51,7 +51,7 @@ function App() {
         <>
             {modal && <ShoppingCart close={closeModal} />}
             {bookingModal && <TableModal close={closeBooking} />}
-            <Header delivery={showModal} openTable={showBooking} Toggles={Toggles} togle={togle} />
+            <Header delivery={showModal} openTable={showBooking} Toggles={Toggles} togle={togle} openBooking={showBooking} />
             {togle && <HedeMenu delivery={showModal} Toggles={Toggles} />}
             <Story />
             <Reservation onClick={showBooking} Toggles={Toggles} />
