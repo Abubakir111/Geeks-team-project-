@@ -29,8 +29,8 @@
 }
 
 .closBtn {
-    top: 5%;
-    right: 5%;
+    top: 2%;
+    right: 2%;
     width: 60px;
     position: absolute;
     color: #fff;
@@ -75,6 +75,17 @@
         position: absolute;
         z-index: 2;
     }
+     .closBtn {
+    top: 1%;
+    right: 1%;
+    width: 60px;
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+    background: none;
+    border: none;
+    z-index: 2;
+}
 }
 
 @media screen  and (max-width: 646px) and (min-width: 0px) {
@@ -84,6 +95,17 @@
         position: absolute;
         z-index: 2;
     }
+    .closBtn {
+    top: 1%;
+    right: 1%;
+    width: 60px;
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    background: none;
+    border: none;
+    z-index: 2;
+}
 }
 
 @media screen  and (max-width: 420px) and (min-width: 0px) {
