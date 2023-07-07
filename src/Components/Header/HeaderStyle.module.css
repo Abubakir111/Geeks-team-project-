@@ -52,6 +52,7 @@ img{
 }
 .hederMenuGroop{
     display: none;
+    cursor: pointer;
 }
 .headerNavBar{
     display: flex;
