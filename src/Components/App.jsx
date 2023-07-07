@@ -12,24 +12,26 @@ import Restaurant from "./Restaurant/Restaurant";
 import Footer from "./Footer/Footer";
 import ShoppingCart from "./ShoppingCart/ShoppingCart";
 import TableModal from "./TableModal/TableModal.jsx";
+import HedeMenu from './Header/HedeMenu/HedeMenu';
 
 function App() {
 
+    const [togle, setTogle] = useState(false)
+
+    const Toggles = () => setTogle(togle => !togle)
+
     const [modal, setModal] = useState(false);
-    const showModal = () => {
-        setModal(true);
-    };
-    const closeModal = () => {
-        setModal(false);
-    };
+
+    const showModal = () => setModal(true);
+
+    const closeModal = () => setModal(false);
 
     const [bookingModal, setBookingModal] = useState(false)
-    const showBooking = () => {
-        setBookingModal(true)
-    }
-    const closeBooking = () => {
-        setBookingModal(false)
-    }
+
+    const showBooking = () => setBookingModal(true)
+
+    const closeBooking = () => setBookingModal(false)
+
 
     useEffect(() => {
         function handleScroll() {
@@ -48,17 +50,18 @@ function App() {
     return (
         <>
             {modal && <ShoppingCart close={closeModal} />}
-            {bookingModal && <TableModal close={closeBooking}/>}
-            <Header delivery={showModal} openTable={showBooking} />
+            {bookingModal && <TableModal close={closeBooking} />}
+            <Header delivery={showModal} openTable={showBooking} Toggles={Toggles} togle={togle} />
+            {togle && <HedeMenu delivery={showModal} Toggles={Toggles} />}
             <Story />
-            <Reservation onClick={showBooking}/>
-            <OurDishes/>
-            <OurMenu onTopPage={showModal}/>
+            <Reservation onClick={showBooking} Toggles={Toggles} />
+            <OurDishes />
+            <OurMenu onTopPage={showModal} />
             <Guests />
             <Gallery />
             <Cookers />
             <Restaurant />
-            <Footer openBooking={showBooking}/>
+            <Footer openBooking={showBooking} />
         </>
     );
 }

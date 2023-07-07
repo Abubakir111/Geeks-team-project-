@@ -7,6 +7,12 @@
     border: 2px solid rgb(165, 135, 3);
     border-radius: 5px ;
 }
+.btnContainer{
+    right: 4%;
+    bottom: 12%;
+    position: absolute;
+    z-index: 2;
+}
 .fonimage{
     top: 0px;
     left: 0px;
@@ -18,13 +24,72 @@
     font-size: 40px;
 }
 .closBtn{
-    top: 10px ;
-    right: 20px;
+    top: 5% ;
+    right: 5%;
      width: 60px;
     position: absolute;
     color:#fff;
     font-size: 40px;
     background: none;
     border: none;
+    z-index: 2;
 }
-
+@media screen  and (max-width:1062px) and (min-width:0px) {
+    .btnContainer{
+    right: 2%;
+    bottom: 4%;
+    position: absolute;
+    z-index: 2;
+}
+.closBtn{
+    top: 2% ;
+    right: 1%;
+     width: 60px;
+    position: absolute;
+    color:#fff;
+    font-size: 40px;
+    background: none;
+    border: none;
+    z-index: 2;
+}
+}
+@media screen  and (max-width:1056px) and (min-width:0px) {
+    .btnContainer{
+      right: 42%;
+    bottom: 5%;
+    position: absolute;
+    z-index: 2;
+}
+}
+@media screen  and (max-width:880px) and (min-width:0px) {
+    .btnContainer{
+     right: 38%;
+    bottom: 4%;
+    position: absolute;
+    z-index: 2;
+}
+}
+@media screen  and (max-width:646px) and (min-width:0px) {
+    .btnContainer{
+     right: 38%;
+    bottom: 2%;
+    position: absolute;
+    z-index: 2;
+}
+}
+@media screen  and (max-width:420px) and (min-width:0px) {
+    .btnContainer{
+     right: 28%;
+    bottom: 2%;
+    position: absolute;
+    z-index: 2;
+}
+}
+@media screen  and (max-width:272px) and (min-width:0px) {
+    .btnContainer{
+     right: 18%;
+    bottom: 2%;
+    position: absolute;
+    z-index: 2;
+}
+}

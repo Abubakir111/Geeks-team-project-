@@ -30,7 +30,7 @@ color: #BC9060;
 }
 @media screen and  (max-width:319px) and  (min-width:0px) {
 .contain{
-width: 349px;
+width: 90%;
 height: 328px;
 background: #fff;
 display: grid;
